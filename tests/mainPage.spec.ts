@@ -11,7 +11,7 @@ test.describe('tests of the main page', () => {
     await expect(page.getByRole('link', { name: 'CLI', exact: true })).toBeVisible();
   });
 
-  test('test checks names of the header navigation', async ({ page }) => {
+  test.only('test checks names of the header navigation', async ({ page }) => {
     await expect(page.getByRole('link', { name: 'Playwright logo Playwright' })).toContainText(
       'Playwright',
     );
